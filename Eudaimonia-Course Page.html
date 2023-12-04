@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myengjo:wght@400;700&display=swap">
+    <title>Course Page</title>
+    <style>
+        body {
+            zoom: 0.8; /* Adjust the value as needed */
+            font-family: 'Jost';
+        }
+
+        .footer {
+            display: flex;
+            background-color: #000000;
+            color: #ffffff;
+			font-family: Josefin Sans;
+            text-align: center;
+            padding: 10px;
+			height: 120px;
+			padding-bottom: 110px;
+        }
+
+        .column3 {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .p1 {
+            text-align: center;
+            font-size: 46px;
+            font-family: 'Yellowtail';
+        }
+
+        .button-styling {
+            background-color: #1a1a1a;
+            text-align: center;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 29px;
+            font-family: 'Inter';
+            color: white;
+            width: 800px;
+            height: 65px;
+        }
+
+        .button-styling a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .column {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .row {
+            margin: 5px;
+			content-align: center;
+        }
+
+        .column-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image {
+            width: 200px; /* Adjust the image width as needed */
+            height: auto;
+        }
+
+        .row-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .p2 {
+            font-size: 35px;
+            font-family: Yellowtail;
+            color: black;
+            text-align: center;
+        }
+		
+		
+        .button-container {
+            display: flex;
+            justify-content: center;
+				    padding-bottom: 20px;    
+          
+        }
+
+   	.image-button {
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Sans Serif Pro';
+    font-size: 24px;
+    background-color: transparent;
+    transition: 0.4s;
+}
+
+        
+
+        .image-button:hover {
+            background-color: #bebcbc85;
+            color: #000;
+        }
+
+        .image-button a {
+            color: rgb(0, 0, 0);
+        }
+
+        .shaded-text {
+            text-shadow: 3px 3px 5px rgba(44, 43, 43, 0.4);
+            font-size: 24px;
+        }
+		
+		
+        .horizontal-line {
+            border: 5px solid #000000;
+            margin: 0px 0px;
+        }
+		
+	
+		menu-btn {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.line {
+    width: 45px;
+    height: 5px;
+    background-color: #333;
+    margin: 10px 10px;
+	cursor: pointer;
+}
+
+.side-menu {
+    height: 150vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.7s;
+    padding-top: 30px;
+}
+
+.side-menu a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+
+
+.back-arrow {
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 10px;
+	padding: -5px -5px;
+}
+
+/* Modify the menu-header style for better alignment */
+.menu-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+
+.row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-btn {
+            cursor: pointer;
+        }
+
+        .side-menu {
+            width: 0;
+            height: 70vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.7s;
+            padding-top: 60px;
+        }
+
+        .menu-header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            color: white;
+        }
+
+        .back-arrow {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .side-menu a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+			cursor: pointer;
+        }
+
+        .side-menu a:hover {
+            background-color: #555;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: relative;
+            top: 100%;
+            left: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background-styling" style="height:200px; padding-top:10px;">
+	 <div class="row" style="text-align: left;">
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div id="menu-icon" class="line"></div>
+            <div id="menu-icon" class="line"></div>
+            <div id="menu-icon" class="line"></div>
+        </div>
+
+        <div class="side-menu" id="sideMenu">
+            <div class="menu-header">
+                <div class="back-arrow" onclick="toggleMenu()">
+                    &larr;
+                </div>
+                <p style="font-size: 29px; font-family: Yellowtail;">Navigation</p>
+            </div>
+
+           
+
+			
+           <div class="dropdown">
+                <a onclick="toggleDropdown2()">Meditation</a>
+            <ul class="dropdown-content" id="dropdownContent2">
+                    <li><a href="#">Mindfulness-Full Course</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+
+            
+            <div class="dropdown">
+                <a  onclick="toggleDropdown3()">Stoicism</a>
+                <ul class="dropdown-content" id="dropdownContent1">
+                    <li><a href="#">Seeking Power Over Happiness</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+
+             <div class="dropdown">
+                <a  onclick="toggleDropdown1()">Other</a>
+                <ul class="dropdown-content" id="dropdownContent3">
+                    <li><a href="#">Finding Your Purpose</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+			
+        </div>
+    </div>
+          <h1 style="font-size: 50px; text-align: center; font-family: Yellowtail;">Welcome To The Course Page</h1>
+	<div class="button-container">
+        <div class="button-container">
+            <button class="image-button" style="padding-left: 170px; padding-right: 170px;">
+                <a class="shaded-text" href="">Policies</a>
+            </button>
+            <button class="image-button" style="padding-left: 170px; padding-right: 170px;">
+                <a class="shaded-text" href="">Donate</a>
+            </button>
+			 <button class="image-button" style="padding-left: 170px; padding-right: 170px;">
+                <a class="shaded-text" href="">Contact</a>
+            </button>
+        </div>
+    </div>
+	<hr class="horizontal-line">
+
+   
+
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.getElementById('sideMenu');
+            const menuWidth = sideMenu.style.width;
+
+            if (menuWidth === '250px') {
+                sideMenu.style.width = '0';
+            } else {
+                sideMenu.style.width = '250px';
+            }
+        }
+
+        function toggleDropdown1() {
+            const dropdownContent = document.getElementById('dropdownContent3');
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        }
+		
+		   function toggleDropdown2() {
+            const dropdownContent = document.getElementById('dropdownContent2');
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        }
+		
+		   function toggleDropdown3() {
+            const dropdownContent = document.getElementById('dropdownContent1');
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+				
+        
+
+ 
+
+ 
+	
+	
+     <!-- First Column -->
+     <div id="div1" class="column" style="padding-top: 70px;">
+        <div class="row-container"> <!-- Use a row container to hold the image and paragraph -->
+            <img style="border: 3px solid black;" src="https://i.imgur.com/Vhv6L8V.png" alt="Image not found">
+            <p class="p2">Throughout the day, we engage in activities that can harm us, both physically and mentally, often without realizing it, we get caught up in negative thoughts that don't benefit us.
+                This course is the key to achieve happiness and mental-clarity.
+                Join us on a journey to a happier life through meditation.</strong></p>
+        </div>
+        <div class="row">
+            <button class="button-styling">
+                <a href="#">Click here to read</a>
+            </button>
+        </div>
+    </div>
+                
+            
+     <hr class="horizontal-line">
+     <!-- Second Column -->
+     <div id="div2" class="column">
+        <div class="row-container"> <!-- Use a row container to hold the image and paragraph -->
+            	<img  style="border: 3px solid black;" src="https://i.imgur.com/F4oEDPH.png" alt="Image not found">
+            <p class="p2"> Full guide to discovering your purpose - Many people, have a meaningless and unpurposefull life. Our lives can be like the ocean, precipitous and unpredictable. But if you know your purpose, your life turns from a struggle to a journey that you enjoy every single day, regardless of whether it's hard or not. Find your purpose by reading this full and totally free guide.</strong></p>
+        </div>
+        <div class="row">
+            <button class="button-styling">
+                <a href="#">Coming Soon...</a>
+            </button>
+        </div>
+    </div>
+                 
+            
+    <div class="footer">
+        <div class="column3">
+            <p class="p1">Join a Community Of Like-Minded People:</p>
+            <p style="font-size: 28px; color: white;">Check Out My Youtube Channel:</p>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>

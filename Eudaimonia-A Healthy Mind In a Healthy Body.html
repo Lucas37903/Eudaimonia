@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myengjo:wght@400;700&display=swap">
+    <title>Eudaimonia - A Healthy Mind In a Healthy Body</title>
+    <style>
+        body, h2, h3, h4, h5, p {
+            font-family: 'Jost';
+			position: flex;
+			  margin: 0;
+      padding: 0;
+        }
+		
+				  		body {
+    zoom: 0.8; /* Adjust the value as needed */
+      padding: 0;
+        }
+
+      
+        .h1 {
+            text-align: center;
+            font-size: 46px;
+            font-family: 'Josefin Sans';
+			text-align: center; 
+            color: #000000;
+           
+        }
+        p {
+            text-align: left;
+            color: #ffffff;
+            font-size: 26px;
+        }
+
+        .div1 {
+            background-color: #190a01;
+            padding: 20px;
+        }
+
+        .div2 {
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .column1 {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+       
+		.horizontal-line {
+    border: 5px solid #000000; /* Adjust the color and thickness of the line as needed */
+    margin: 0px 0px; /* Adjust the margin to control the gap between the line and columns */
+	margin-left: 0px;
+	max-width: 100%;
+}
+		
+		body {
+    zoom: 0.8; /* Adjust the value as needed */
+}
+		
+
+.button1 {
+    background-color:black  ;
+    color:#ededed ; /* Change the text color to white */
+    border: 1px solid #ededed; /* Remove the border */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Ensures it behaves like a block-level element */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 29px;
+    font-family: 'Nanum Myengjo'; /* Add quotes around the font name */
+	border-radius: 30px; /* Adjust the value to control the roundness */
+	width: 440px; /* Adjust the width as needed */
+    height: 69px; /* Adjust the height as needed */
+	text-align; center;
+
+    /* Other button styles */
+	
+}
+
+.button1 a {
+    color: #ededed; /* Change the link text color to white */
+    text-decoration: none; /* Remove underline for links within the button */
+}
+
+
+
+ #Details {
+    display: none;
+}
+
+.toggle-button {
+    background-color: #6c6763;
+    color: #ffffff;
+    font-size: 27px;
+    border: none;
+	 transition: background-color 0.4s, color 0.3s; /* Add transition for background color and text color */
+}
+
+.toggle-button:hover {
+    background-color: #ffffff;
+    color:#6c6763 ;
+}
+
+
+    /* Add other styles like padding, font-size, etc. */
+	 /* Style for the .background-styling division */
+        .background-styling {
+            position: relative;
+        }
+
+        /* Style for the black fade transition at the bottom */
+        .background-styling::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 60px; /* Adjust the height of the fade as needed */
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent, #000); /* Black gradient fade */
+            opacity: 0.1; /* Initially invisible */
+            transition: opacity 0.5s ease; /* Transition effect on opacity */
+        }
+
+        /* Hover effect to show the fade transition */
+        .background-styling:hover::after {
+            opacity: 0.2; /* Make the fade visible on hover */
+        }
+	
+
+     
+		 .background-styling {
+	   background-image: url('https://i.imgur.com/Rwz8zJ8.png');
+       max-width: 100%;
+	   
+	   background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Resize the image to cover the entire container */
+    background-position: center; /* Center the background image */
+    color: #000000;
+	}
+
+
+.container1 {
+    display: flex;
+	text-align: center;
+}
+
+.column2 {
+    flex: 1;
+    padding: 10px;
+   
+}
+
+.row2 {
+    padding: 10px;
+    margin: 5px;
+    }
+	
+	.div3 {
+background-color: #000000;
+color: #ffffff;
+}
+
+
+	
+
+.column3 {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+.p1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Josefin Sans'; /* Use 'serif' as a fallback font */
+}
+		
+		.button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+           display: flex;
+		   	padding-bottom: 15px;
+          
+}
+.image-button {
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 0px; /* Add spacing between buttons */
+    font-family: 'Sans Serif Pro';
+    font-size: 24px;
+    background-color: transparent; /* Set the background color to transparent */
+transition: 0.4s;
+cursor: pointer;
+
+}
+
+
+
+.image-button:hover {
+    background-color:#bebcbc85;
+    color: #000;
+}
+
+.image-button a {
+    color: rgb(0, 0, 0);
+}
+
+
+.shaded-text {
+            text-shadow: 3px 3px 5px rgba(44, 43, 43, 0.4);
+            font-size: 24px;
+        }
+		
+		.footer {
+    display: flex;
+   font-family: Nanum Myengjo;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+	height: 230px;
+}
+
+.image-button1 {
+    color:#e2b292;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 0px; /* Add spacing between buttons */
+    font-family: 'Sans Serif Pro';
+    font-size: 24px;
+    background-color: transparent; /* Set the background color to transparent */
+transition: 0.4s;
+cursor: pointer;
+
+}
+
+.image-button1:hover {
+    background-color:#bebcbc85;
+    color: #000;
+}
+
+.image-button1 a {
+    color: rgb(0, 0, 0);
+}
+</style>
+<body>
+        <div class="background-styling" style="height:200px; padding-top:30px;">
+            <h1 style="text-align: center; font-size: 45px; color: #f9f0e1; 
+">Eudaimonia - A Healthy Mind In a Healthy Body</h1>
+            <div class="button-container">
+               
+                <button class="image-button" style="margin-left: 118px; padding-left: 170px; padding-right: 170px; >
+                    <a class="shaded-text" href="">About</a>
+					  </button>
+					  
+					 <button class="image-button" style="padding-left: 170px; padding-right: 170px;>
+                    <a class="shaded-text" href="">Privacy And Terms</a>
+                </button>
+              
+                <button class="image-button1" style="padding-left: 170px; padding-right: 170px;>
+                    <a class="shaded-text" href="">Donate</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+	
+    <div class="div1">
+	<div class="quote-container">
+        <p style="color: #ffffff; padding-top: 15px; padding-left: 10px; padding-right: 10px; text-align: center; font-size: 29px;" id="quote"></p>
+    <script>
+// Array of quotes
+const quotes = [
+    "If the pain is endurable, endure it and stop complaining. If the pain is unendurable, then stop complaining; your destruction will mean its end as well. - Marcus Aurelius",
+    "What is good? All that heightens the feeling of power, the will to power, power itself in man. What is bad? All that proceeds from weakness... Not contentment, but more power. - Nietzsche",
+    "You are beaten to earth? Well, well, what's that! Come up with a smiling face. It's nothing against you to fall down flat, but to lie there, that's disgrace. - Edmund Vance Cooke",
+    "It is not death that a man should fear, but rather he should fear never beginning to live. - Marcus Aurelius",
+    "It is unrealistic to expect people to see you as you see yourself. - Epictetus",
+    "No man is free who is not master of himself. - Epictetus"
+];
+
+// Function to generate a random quote
+function generateQuote() {
+    const quoteElement = document.getElementById('quote');
+    // Get the last displayed quote index from local storage
+    let lastIndex = localStorage.getItem('quoteIndex');
+    lastIndex = lastIndex ? parseInt(lastIndex, 10) : -1;
+
+    // Generate a new quote index different from the last one
+    let newIndex = lastIndex;
+    while (newIndex === lastIndex) {
+        newIndex = Math.floor(Math.random() * quotes.length);
+    }
+
+    // Update the quote and store the new index in local storage
+    quoteElement.textContent = quotes[newIndex];
+    localStorage.setItem('quoteIndex', newIndex.toString());
+}
+
+// Initial quote generation
+generateQuote();
+
+</script>
+      </div>
+    </div>
+
+    <!-- New Division -->
+
+    <div class="div2">
+        <div class="row1">
+                <h1 class="h1" style="padding-top: 15px;">The Purpose Of This Site:</h1>
+                <p style="text-align: center; color: #000000; font-size: 30px; margin-left: 40px; margin-right: 40px;">
+    The purpose of this site is to help other people improve their well-being and mental health. No matter the age, sexuality, race, everybody can improve their mental health and all you have to do is just try. You may be struggling from various reasons like depression, addiction, or lack of social interactions, but it is important to remember that there's nothing you can't fix. You can't turn back time, but you can make your next move better. This site is going to be that next move. Are you in for the journey?
+</p>
+<hr class="horizontal-line">
+</div>
+            </div>
+	
+<!-- New Division -->
+	
+	<div class="container1">
+        <div class="column2">
+            <div class="row2"><img src="https://i.imgur.com/dT6YSFG.png"style="border: 3px solid #227727;"></div>
+            <div class="row2"> 
+			<button class="button1">
+                <a href="https://www.example.com;"><strong>       On The Pursuit Of Happiness     </strong></a>
+            </button></div>
+        </div>
+        <div class="column2">
+            <div class="row2"><img src="https://i.imgur.com/ihUne35.png" style="border: 3px solid #0b6693;"></div>
+            <div class="row2"> <button class="button1">
+                <a href="https://www.example.com;"><strong>         On What's Important In Life     </strong></a>
+            </button></div>
+        </div>
+        <div class="column2">
+            <div class="row2"><img src="https://i.imgur.com/jQl7a3Z.png" style="border: 3px solid #b71515;"></div>
+            <div class="row2"> <button class="button1">
+                <a href="https://www.example.com;"><strong>         On Meditation    </strong></a>
+            </button></div>
+        </div>
+    </div>
+	</div>
+    <!-- New Division -->
+	
+	 <div class="footer" style="max-width: 200%">
+      
+        <div class="column3">
+           <p class="p1" style="font-style: italic; color: #060d13; padding-top: 30px; font-family: Yellowtail;">Join a Community Of Like Minded People:</p>
+            <p style="text-align: center; font-size: 28px; color: #000000; padding-top: 65px;">Check Out My Youtube Channel:</p>
+			<p style="text-align: center;"></p>
+        </div>
+        </div>
+    </footer>
+
+    
+	</div>
+</body>
+</html>
